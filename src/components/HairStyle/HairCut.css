@@ -1,0 +1,9 @@
+.hairContainer .hairContent {
+    background: white;
+    position: relative;
+}
+
+.hairContent img {
+    width: 250px;
+    height: 400px;
+}

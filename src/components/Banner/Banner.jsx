@@ -1,7 +1,10 @@
-import React from 'react'
+import React , { useState } from 'react'
+import Reservation from '../Reservation/Reservation'
 import './Banner.css'
 
 const Banner = () => {
+
+
   return (
     <div className='content'>
         <div className='header'>
@@ -14,7 +17,8 @@ const Banner = () => {
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             <br></br>
-            <button class="reserveButton">예약</button>
+            <br></br>
+          <button className="reserveButton" ><Reservation />예약</button>
         </div>
 
     </div>

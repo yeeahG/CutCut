@@ -1,4 +1,18 @@
-.hairContent {
+.hairBox {
+    border-top: 2px solid #ccc;
+    padding-top: 50px;
+    margin: 50px 100px;
+}
+
+.hairContainer {
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+
+/* .hairContent {
     display: flex;
     align-items: stretch;
     margin: 0 auto;
@@ -50,4 +64,4 @@ p.price {
     line-height: 18px;
     word-wrap: break-word;
     word-break: break-all;
-}
+} */
