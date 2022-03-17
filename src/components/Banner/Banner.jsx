@@ -1,8 +1,18 @@
 import React , { useState } from 'react'
 import Reservation from '../Reservation/Reservation'
 import './Banner.css'
+import Modal from '../Modal/Modal'
 
 const Banner = () => {
+
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => {
+    setModalOpen(true);
+  };
+  const closeModal = () => {
+    setModalOpen(false);
+  };
 
 
   return (
@@ -18,7 +28,18 @@ const Banner = () => {
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             <br></br>
             <br></br>
-          <button className="reserveButton" ><Reservation />예약</button>
+          {/* <button className="reserveButton">
+            <Reservation />예약
+            <Modal open={modalOpen} close={closeModal} header="예약정보">예약</Modal>
+          </button> */}
+          <button type='submit' onClick={openModal} className="reserveButton">
+            예약
+          </button>
+          
+          <Modal open={modalOpen} close={closeModal}>
+            <p>HERE CONTENT</p>
+          </Modal>
+
         </div>
 
     </div>
