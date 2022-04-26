@@ -20,8 +20,8 @@
     margin: 0 auto;
 }
 
-.menu-container {
-    display: flex;
+.show-menu, .hide-menu  {
+    display: inline-block;
     justify-content: center;
 }
 
@@ -31,6 +31,30 @@
 
 #menu-btn {
     display: none;
+}
+
+.menu-container {
+    /* width: 376px;
+    height: 500px;
+    position: absolute;
+    left: 0px; */
+    display: flex;
+    justify-content: center;
+    transition: 1s;
+}
+
+.show-menu p {
+    margin: 20px 20px;
+}
+    
+.hide-menu {
+    /* display: flex;
+    justify-content: center;
+    width: 376px;
+    height: 500px;
+    position: absolute;
+    left: -376px;
+    transition: 1s; */
 }
 
 @media (max-width:768px) {
@@ -50,16 +74,22 @@
     }
 
     /* navbar가 아이콘 안에서 활성화*/
-    .menu-container {
+    /* .menu-container {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    }
+    } */
 
     .menu-container p {
         display: block;
         margin: 2rem;
     }
 
-    .order form .flex .inputBox {
-        width: 100%;
+    .show-menu  {
+        /* width: 376px;
+        height: 500px;
+        position: absolute;
+        left: 0px; 
+        justify-content: center;
+        transition: 1s;*/
+        display: none;
     }
 }

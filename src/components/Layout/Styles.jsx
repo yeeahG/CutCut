@@ -1,9 +1,9 @@
 import React from 'react'
-import HairStyle from './HairStyle'
+import HairStyle from '../HairStyle/HairStyle'
 
 const Styles = () => {
   return (
-    <div>St
+    <div>
       <HairStyle />
     </div>
   )

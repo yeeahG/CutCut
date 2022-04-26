@@ -5,7 +5,7 @@ import Banner from './components/Banner/Banner';
 import HairStyle from './components/HairStyle/HairStyle'
 import Reservation from './components/Reservation/Reservation'
 import Reserve from './components/Layout/Reserve';
-import Styles from './components/HairStyle/Styles'
+import Styles from './components/Layout/Styles'
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 function App() {
@@ -15,7 +15,6 @@ function App() {
         <Nav>
           {/* <Home /> */}
           {/* <Banner /> */}
-
         </Nav>
         
         <Routes>
