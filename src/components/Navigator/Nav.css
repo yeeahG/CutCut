@@ -6,7 +6,7 @@
     white-space: normal;
     overflow:hidden;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 
@@ -31,6 +31,7 @@
 
 #menu-btn {
     display: none;
+    cursor: pointer;
 }
 
 .menu-container {
@@ -46,16 +47,17 @@
 .show-menu p {
     margin: 20px 20px;
 }
-    
+
+ /*    
 .hide-menu {
-    /* display: flex;
+    display: flex;
     justify-content: center;
     width: 376px;
     height: 500px;
     position: absolute;
     left: -376px;
-    transition: 1s; */
-}
+    transition: 1s; 
+}*/
 
 @media (max-width:768px) {
     #menu-btn {

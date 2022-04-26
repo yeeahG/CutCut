@@ -15,7 +15,7 @@ const Nav = () => {
       <h2 className='storeTitle'><a href='/'>CutCut</a></h2>
 
       <div className='menu-container'>
-        <p onClick={()=>toggleMenu()} id='menu-btn'>menu</p>
+        <p onClick={()=>toggleMenu()} id='menu-btn'>✂</p>
       </div>
 
       <div className={isOpen ? "show-menu" : "hide-menu"}>
