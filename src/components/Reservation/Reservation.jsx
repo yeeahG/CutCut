@@ -32,8 +32,13 @@ const Reservation = (props) => {
     // <div className='reserveContent'>
       // <Modal>{reservationModalContent}</Modal>
     // </div>
-    <Modal open={modalOpen} close={closeModal}>
-    </Modal>
+    // <Modal open={modalOpen} close={closeModal}>
+    // </Modal>
+
+    <div>
+      Reservation
+      
+    </div>
 
   )
 }

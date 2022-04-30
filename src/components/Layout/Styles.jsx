@@ -4,7 +4,7 @@ import HairStyle from '../HairStyle/HairStyle'
 const Styles = () => {
   return (
     <div>
-      <HairStyle />
+      {/* <HairStyle /> */}
     </div>
   )
 }

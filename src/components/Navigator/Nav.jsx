@@ -22,6 +22,7 @@ const Nav = () => {
         <p><a href='/'>Home</a></p>
         <p><a href='/styles'>Style</a></p>
         <p><a href='/reserve'>Reserve</a></p>
+        <p><a href='/user'>User</a></p>
       </div>
       {/* <p id='menu-btn'> menu </p> */}
     </div>

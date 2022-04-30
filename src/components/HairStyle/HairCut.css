@@ -6,6 +6,8 @@
 .hairContent img {
     width: 250px;
     height: 400px;
+    /* width: 15vw;
+    height: 50vh; */
 }
 
 .hairContent .styleText {
@@ -22,7 +24,7 @@
     word-break: break-all;
 }
 
-.styleText .price {
+/* .styleText .hairPrice {
     color: #555;
     font-size: 16px;
     min-height: 32px;
@@ -30,4 +32,14 @@
     line-height: 18px;
     word-wrap: break-word;
     word-break: break-all;
+} */
+
+/*modal*/
+.reservContent {
+    /* position: flex; */
+}
+
+.reservContent img {
+    width: 12%;
+    height: 36%;
 }

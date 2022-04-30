@@ -26,16 +26,17 @@ const HairCut = (props) => {
         <div className='hairDesigner'>{props.designer}</div>
       </div>
       <button type='submit' onClick={openModal}>
-        예약
+        선택
       </button>
 
-      <div>
+      <div className='reservContent'>
         <Modal open={modalOpen} close={closeModal} header="예약을 진행해주세요">
           <img className="hairImage" src={props.image}/>
-          <p>선택한 스타일 : {props.name}</p>
-          <p>가격 : {props.price}</p>
-          <p>디자이너 : {props.designer}</p>
-          날짜
+          <div className='hairReserv'>
+            <p>선택내역 : {props.name} {props.price}￦ {props.designer}디자이너 </p>
+          </div>
+          <p>날짜 : </p>
+          {/* 연락처 : <input type="text"/> */}
         </Modal>
       </div>
     </div>

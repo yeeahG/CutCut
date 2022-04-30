@@ -92,3 +92,7 @@
   opacity: 1;
   }
 }
+
+main img {
+  position: flex;
+}

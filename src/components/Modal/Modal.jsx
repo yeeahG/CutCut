@@ -42,6 +42,9 @@ const Modal = (props) => {
             <button className="close" onClick={close}>
               선택완료
             </button>
+            <button className="close">
+              <a href='/user'>예약하기</a>
+            </button>
             <button className="close" onClick={close}>
               close
             </button>
