@@ -23,9 +23,10 @@ const HairCut = (props) => {
       <div className='styleText'>
         <div className='hairName'><h1>{props.name}</h1></div>
         <div className='hairPrice'>{props.price}</div>
+        <div className='hairDesigner'>{props.designer}</div>
       </div>
       <button type='submit' onClick={openModal}>
-        선택
+        예약
       </button>
 
       <div>
@@ -33,6 +34,8 @@ const HairCut = (props) => {
           <img className="hairImage" src={props.image}/>
           <p>선택한 스타일 : {props.name}</p>
           <p>가격 : {props.price}</p>
+          <p>디자이너 : {props.designer}</p>
+          날짜
         </Modal>
       </div>
     </div>
