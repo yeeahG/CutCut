@@ -35,7 +35,7 @@ const HairCut = (props) => {
   }
 
   // console.log(props.name);
-
+  //console.log(startDate.toLocaleString());
 
   return (
     <div className='hairContent'>
