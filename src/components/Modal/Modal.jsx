@@ -1,9 +1,7 @@
 import React, { useContext, useState } from 'react';
 import HairContext from '../Store/HairContext';
 import ReservationItem from '../Store/ReservationItem';
-import Calender from '../Layout/Calender';
 import './Modal.css';
-
 
 const Modal = (props) => {
   // 열기, 닫기, 모달 헤더 텍스트를 부모로부터 받아옴
@@ -57,8 +55,6 @@ const Modal = (props) => {
 
           <main>
             {props.children}
-            {/* <Calender /> */}
-            {/* <Calender dates={dates}/> */}
           </main>
           
           <footer>

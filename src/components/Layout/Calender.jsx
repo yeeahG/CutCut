@@ -7,6 +7,7 @@ const Calender = (props) => {
     const selectedDate = (date) => {
         props.dates(date);
     }
+    console.log(setStartDate);
 
 
     return (
