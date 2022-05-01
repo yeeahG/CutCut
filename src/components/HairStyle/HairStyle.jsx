@@ -84,6 +84,8 @@ const HairStyle = () => {
        fetchHairs().catch(error => console.log(error));
    }, []);
 
+   console.log(hairList);
+
 
   return (
         <div className='hairBox'>

@@ -1,6 +1,7 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import HairContext from '../Store/HairContext';
 import ReservationItem from '../Store/ReservationItem';
+import Calender from '../Layout/Calender';
 import './Modal.css';
 
 
@@ -9,18 +10,36 @@ const Modal = (props) => {
   const { open,close,header} = props;
   const hairContext = useContext(HairContext);
 
-  const hairItems = (
-    <ul>
-      {hairContext.items.map((hair) => (
-        <ReservationItem
-          key={hair.id}
-          name={hair.name}
-          price={hair.price}
-          image={hair.image}
-        />
-      ))}
-    </ul>
-  )
+  // const hairItems = (
+  //   <ul>
+  //     {hairContext.items.map((hair) => (
+  //       <ReservationItem
+  //         key={hair.id}
+  //         name={hair.name}
+  //         price={hair.price}
+  //         image={hair.image}
+  //       />
+  //     ))}
+  //   </ul>
+  // )
+
+
+  // console.log(startDate.toLocaleString());
+  //console.log(props.children);
+
+  //localstorage로 사용
+  // let localStorage = window.localStorage;
+
+  // let dates = (dates) => {
+  //   let day = dates.toLocalDateString();
+  //   day = localStorage.setItem('날짜선택', day);
+  // }
+
+  const onReserve = (e) => {
+
+  }
+
+  // console.log(props.children[1]);
 
   return (
     // 모달이 열릴때 openModal 클래스가 생성된다.
@@ -31,18 +50,20 @@ const Modal = (props) => {
           <header>
             {/* <p>예약을 진행해주세요</p> */}
             {props.header}
-            
             <button className="close" onClick={props.close}>
                &times;
             </button>
           </header>
-          <main>{props.children}</main>
+
+          <main>
+            {props.children}
+            {/* <Calender /> */}
+            {/* <Calender dates={dates}/> */}
+          </main>
           
           <footer>
-            <button className="close" onClick={close}>
-              선택완료
-            </button>
-            <button className="close">
+            <button className="submit">
+            {/* <button className="submit" onClick={onReserve}> */}
               <a href='/user'>예약하기</a>
             </button>
             <button className="close" onClick={close}>
