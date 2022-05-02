@@ -22,4 +22,5 @@ solution
 원래 <BrowserRouter>로 전체를 감쌌는데 그걸 지웠다
 
 ### 🖥️
-![cutcut](https://user-images.githubusercontent.com/97449025/165319137-531beaa1-8e4c-4a8d-91b3-8f56d45b6cd1.png)
+![cutcut2](https://user-images.githubusercontent.com/97449025/166259044-b0eeab90-03ae-416c-8e78-39ab6a2982cd.png)
+
