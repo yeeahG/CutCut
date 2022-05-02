@@ -1,0 +1,97 @@
+.navi-container {
+    width: 100%;
+    text-align: center;
+    border-radius: 4px;
+    display: table;
+    white-space: normal;
+    overflow:hidden;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+
+.navi-container .storeTitle {
+    font-size: 30px;
+    border: 5px solid #323da0;
+    color: #000;
+    width: 200px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.show-menu, .hide-menu  {
+    display: inline-block;
+    justify-content: center;
+}
+
+.menu-container p {
+    margin: 20px 20px;
+}
+
+#menu-btn {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-container {
+    /* width: 376px;
+    height: 500px;
+    position: absolute;
+    left: 0px; */
+    display: flex;
+    justify-content: center;
+    transition: 1s;
+}
+
+.show-menu p {
+    margin: 20px 20px;
+}
+
+ /*    
+.hide-menu {
+    display: flex;
+    justify-content: center;
+    width: 376px;
+    height: 500px;
+    position: absolute;
+    left: -376px;
+    transition: 1s; 
+}*/
+
+@media (max-width:768px) {
+    #menu-btn {
+        display: inline-block;
+    }
+
+    /*Navbar가 아이콘 안으로 들어가고 그 정렬*/
+    .menu-container {
+        /* position: absolute;
+        top: 99%; left: 0; right: 0;
+        background-color: var(--white);
+        border-top: var(--border);
+        border-bottom: var(--border);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); */
+        display: none;
+    }
+
+    /* navbar가 아이콘 안에서 활성화*/
+    /* .menu-container {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    } */
+
+    .menu-container p {
+        display: block;
+        margin: 2rem;
+    }
+
+    .show-menu  {
+        /* width: 376px;
+        height: 500px;
+        position: absolute;
+        left: 0px; 
+        justify-content: center;
+        transition: 1s;*/
+        display: none;
+    }
+}
