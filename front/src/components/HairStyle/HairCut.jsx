@@ -5,9 +5,9 @@ import './HairCut.css'
 import Calender from '../Layout/Calender';
 
 const designers =[
-  {key:1, value:"1번 디자이너"},
-  {key:2, value:"2번 디자이너"},
-  {key:3, value:"3번 디자이너"},
+  {key:1, name:"yeri 디자이너", value:"1번 디자이너"},
+  {key:2, name:"september 디자이너", value:"2번 디자이너"},
+  {key:3, name:"kim 디자이너",  value:"3번 디자이너"},
 ]
 
 const HairCut = (props) => {
@@ -34,7 +34,9 @@ const HairCut = (props) => {
       name : localStorage.getItem("hairName"),
       price : localStorage.getItem("hairPrice"),
       designer : localStorage.getItem("hariDesigner"),
+      // designerSelect : localStorage.getItem("designerSelect")
     }
+    console.log(choiceData);
 
     localStorage.setItem("choice", JSON.stringify(choiceData));
   }
@@ -56,11 +58,11 @@ const HairCut = (props) => {
 
   const designerChoiceHandler=(e)=>{
     setContent(e.currentTarget.value)
-    // localStorage.setItem("designerS", Content);
+    localStorage.setItem("designerSelect", Content)
   }
 
   console.log(Content);
-  // console.log(designerS);
+  console.log(localStorage.getItem("designerSelect"));
 
   return (
     <div className='hairContent'>
@@ -93,9 +95,10 @@ const HairCut = (props) => {
 
             <select onChange={designerChoiceHandler} value={Content}>
               {designers.map((item)=>(
-                <option key={item.key} value={item.value}>{item.value}</option>
+                <option key={item.key} name={item.name} value={item.value}>{item.value}</option>
               ))}
             </select>
+             {Content}
 
             <Calender />
           </div>

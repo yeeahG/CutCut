@@ -48,7 +48,7 @@ const Modal = (props) => {
           <header>
             {/* <p>예약을 진행해주세요</p> {localStorage.getItem("hairPrice")}*/}
             {/* {localStorage.getItem("hairName")} ({localStorage.getItem("hariDesigner")}디자이너) 예약을 진행해주세요 */}
-            {localStorage.getItem("hairName")} 예약을 진행해주세요
+            {localStorage.getItem("hairName")} 예약 진행 중
             <button className="close" onClick={props.close}>
                &times;
             </button>
