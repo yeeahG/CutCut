@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Header } from './Header';
+import Title from './Title'
 import './page.css';
 
 export const Page = () => {
@@ -8,7 +9,7 @@ export const Page = () => {
 
   return (
     <article>
-      <Header
+      <Title
         user={user}
         onLogin={() => setUser({ name: 'Jane Doe' })}
         onLogout={() => setUser(undefined)}
