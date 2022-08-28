@@ -95,7 +95,7 @@ const HairCut = (props) => {
 
             <select onChange={designerChoiceHandler} value={Content}>
               {designers.map((item)=>(
-                <option key={item.key} name={item.name} value={item.value}>{item.value}</option>
+                <option key={item.key} value={item.value}>{item.value}</option>
               ))}
             </select>
              {Content}
